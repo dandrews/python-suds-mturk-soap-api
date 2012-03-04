@@ -45,7 +45,7 @@ service_url='https://mechanicalturk.sandbox.amazonaws.com/?Service=AWSMechanical
 
 
 # create the client
-client = suds.client.Client( wsdl, location=service_url, transport=transport )
+client = Client( wsdl, location=service_url, transport=transport )
 
 
 # create CreateHITRequest object
